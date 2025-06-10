@@ -27,7 +27,7 @@ Bu proje, yemek tariflerini görüntüleme, arama ve favorilere ekleme özellikl
 ## Kurulum
 1. Projeyi klonlayın
 ```bash
-git clone [proje-url]
+git clone [https://github.com/SohibBaki/Food-Recipes-App-]
 ```
 2. Android Studio'da açın
 3. Gradle sync işlemini tamamlayın
