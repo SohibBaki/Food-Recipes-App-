@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">FoodRecipesApp</string>
+    <string name="home">Home</string>
+    <string name="what_would_you_like_to_eat">What would you like to eat</string>
+    <string name="over_popular_items">Over popular items</string>
+    <string name="categories">Categories</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="area">Area: %1$s</string>
+    <string name="instructions"> - Instructions: </string>
+    <string name="categories2">Categories: %1$s</string>
+    <string name="category_name">Category name</string>
+    <string name="categories_meals">%1$s: %2$s</string>
+    <string name="meal_saved">Meal saved!</string>
+    <string name="meal_deleted">Meal deleted!</string>
+    <string name="undo">UNDO</string>
+    <string name="read_more">Read more…</string>
+    <string name="search_meals">Search meals…</string>
+    <string name="recipe_video">Recipe Video</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+</resources>

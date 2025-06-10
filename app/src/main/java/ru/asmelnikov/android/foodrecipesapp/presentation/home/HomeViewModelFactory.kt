@@ -1,0 +1,13 @@
+package ru.asmelnikov.android.foodrecipesapp.presentation.home
+
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import ru.asmelnikov.android.foodrecipesapp.db.MealDatabase
+
+class HomeViewModelFactory(
+    private val mealDatabase: MealDatabase
+) : ViewModelProvider.Factory {
+    override fun <T : ViewModel> create(modelClass: Class<T>): T {
+        return HomeViewModel(mealDatabase) as T
+    }
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.favorites.FavoritesFragment"
+        android:label="fragment_favorites"
+        tools:layout="@layout/fragment_favorites" >
+        <action
+            android:id="@+id/action_favoritesFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoriesFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.categories.CategoriesFragment"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" >
+        <action
+            android:id="@+id/action_categoriesFragment_to_categoryMealsFragment"
+            app:destination="@id/categoryMealsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_categoryMealsFragment"
+            app:destination="@id/categoryMealsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.details.DetailsFragment"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" >
+        <argument
+            android:name="meal_id"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/categoryMealsFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.category_meal.CategoryMealsFragment"
+        android:label="fragment_category_meals"
+        tools:layout="@layout/fragment_category_meals" >
+        <argument
+            android:name="category_name"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_categoryMealsFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/mealBottomFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.meal_bottom.MealBottomFragment"
+        android:label="fragment_meal_bottom"
+        tools:layout="@layout/fragment_meal_bottom" >
+    </dialog>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="ru.asmelnikov.android.foodrecipesapp.presentation.search.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_searchFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />
+    </fragment>
+</navigation>
